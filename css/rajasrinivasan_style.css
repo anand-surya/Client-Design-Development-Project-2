@@ -1,0 +1,445 @@
+.orangeBg {
+    background-color: orange !important;
+}
+
+.about1{
+    color:white; 
+    height: 400px;
+    text-align: center;
+    background-repeat: no-repeat; 
+    background-position: left;
+} 
+.about1 h1{
+    margin: 50px;
+}
+.undergrad-degrees{
+    background-repeat:repeat-x; 
+    background-position: left;
+}
+
+.grad-degrees{ 
+    background-repeat:repeat-x; 
+    background-position: 50% 60%;
+}
+.undergrad-minors{
+    background-color:rgba(33, 33, 33, 0.3); 
+    background-repeat:repeat-x; background-position: left;
+}
+.employment{
+    background-repeat: no-repeat; 
+    background-position: 50% 60%;
+}
+.research{
+    background-repeat: no-repeat; 
+    background-position: top; 
+}
+
+.btn {
+    background-color: orange;
+}
+
+.btn:hover{
+    background-color: orangered;
+    text-decoration: none;
+}
+
+.modal {
+    padding: 15px;
+}
+
+
+
+section {
+    padding: 50px 0;
+    position: relative;
+    background-color:rgba(33, 33, 33, 0.3);
+    width: 100%;
+    text-align: center;
+}
+
+
+cite{
+    color: grey;
+}
+
+
+
+h1 {
+    font-weight: 500;
+    margin: 0 auto auto;
+    text-transform: uppercase;
+    font-size: 3.56rem;
+    color: white;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2.92rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 2.28rem;
+    color: white;
+}
+
+h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.64rem;
+}
+
+h5 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    font-weight: 500;
+    color: orange;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FF8F7E;
+}
+
+a.btn, a.btn:hover {
+    color: #ffffff;
+}
+
+
+.nav-wrapper, nav, .navbar-fixed {
+    height: 50px;
+}
+
+nav .brand-logo {
+    margin-right: 20px;
+    
+   
+}
+
+#logo{
+    height: 30px;
+    width: 60px;
+}
+
+.nav-wrapper a {
+    display: inline-block;
+    background-color: transparent !important;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.nav-wrapper a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-wrapper li {
+    line-height: 56px;
+    border-bottom: 4px solid transparent
+}
+
+.nav-wrapper li:hover {
+    border-bottom: 4px solid orange;
+    background-color: rgba(0,0,0,0.1);
+    height: 51px;
+}
+
+#nBut {
+    margin: auto 10px;
+    font-size: 30px;
+}
+
+.nav-wrapper .header-title{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+nav .button-collapse i {
+    font-size: 2rem;
+}
+
+.side-nav {
+    background-color: orange;
+}
+
+.side-nav a {
+    color: white;
+}
+
+.side-nav li {
+    line-height: 80%;
+    height: 51px;
+}
+
+.side-nav li:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+blockquote {
+    border-left-color: transparent; 
+    color: white;
+    margin: 40px 50px auto;
+    padding: 0 1.5rem;
+}
+
+.degree-description {
+    text-align: center;
+}
+
+
+.card.medium {
+    background-color: orange !important;
+}
+
+.degree-name.activator:hover {
+    color: white;
+}
+
+
+.collapsible-header{
+    background-color: orange;
+    color: black;
+    text-align: left;
+}
+
+.collapsible-header:hover{
+    color: white;
+}
+
+.collapsible-body{
+    font-size: medium;
+    background-color: white;
+}
+
+.accordion.collapsible-header{
+    background-color: orange;
+}
+
+#coopTable-content h2{
+  color: #000;
+}
+
+#employmentTable-content h2{
+    color: #000;
+}
+
+
+.employment p {
+    text-align: center;
+}
+
+
+.card-panel{
+height: 200px;
+background-color: orange;
+}
+
+table.tablesorter thead tr .header {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: orange;
+}
+
+
+.modal.faculty-staff img {
+    margin: 10px 30px 0 0;
+    max-height: 180px;
+}
+
+.modal.faculty-staff {
+    text-align: left;
+}
+
+
+.faculty-staff .btn{
+    margin: 0 auto 25px;
+    width: 75%;
+}
+
+.facultyImg {
+    max-height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.research-area {
+    text-align: justify;
+}
+
+.research-area li{
+    margin: 15px auto;
+}
+
+.research-faculty.btn {
+    margin: 0 auto 15px;
+    width: 75%;
+}
+
+.student-resources.btn{
+    margin: 0 auto 15px;
+    width: 100%;
+}
+
+
+#studentServices-content h4, #studentAmbassadors-content h4, #forms-content h4, #coopEnrollment-content h4 {
+    text-align: left;
+}
+
+.advisors {
+    margin: 0 auto 25px;
+    text-align: left;
+}
+
+ #studentServices-content h5 {
+    text-align: left;
+}
+
+
+
+.footer-copyright p, .footer-copyright a {
+    text-align: center;
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 0;
+}
+
+footer.page-footer {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 35px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+footer .quickLinks{
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+}
+
+footer .social {
+    border: none;
+    margin: auto 20px;
+}
+
+footer a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+footer blockquote {
+    font-style: italic;
+}
+
+.map {
+    width: 750px;
+    height: 420px;
+    border: none;
+}
+
+.overlay {
+    background-color: rgba(255,221,135, 0.5);
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right:0;
+    top:0;
+    z-index: 1;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .map {
+        width: 600px;
+    }
+    .card.small {
+        height: 430px;
+    }
+    .minors-card {
+        height: 240px;
+    }
+    .stats {
+        height: 330px;
+    }
+    .research-card {
+        height: 140px;
+    }
+    .resources-card {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .map {
+        width: 700px;
+    }
+    .modal {
+        padding: 5px;
+    }
+    .grad-degrees .certificate{
+        height: 100%;
+    }
+    .minors-card {
+        height: 230px;
+    }
+    .research-card {
+        height: 120px;
+    }
+    .resources-card {
+        height: 180px;
+    }
+    .panel#intro {
+        background: url(../img/kaboompics.com_mac.jpg) #000 no-repeat center left fixed;
+    }
+    #mainvideo {
+        display: none;
+        background: url(../img/kaboompics.com_mac.jpg) #000 no-repeat center left fixed;
+    }
+    .ist-title{
+        font-size: 9vw;
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grad-degrees .certificate{
+        height: 100%;
+    }
+    .minors-card {
+        height: 100%;
+    }
+    .stats {
+        height: 100%;
+        min-height: inherit;
+    }
+    .stats h4 {
+        font-size: 3.5em;
+    }
+    .research-card {
+        height: 100%;
+    }
+    .research-card-faculty {
+        height: 100%;
+    }
+    .resources-card {
+        height: 100%;
+    }
+}

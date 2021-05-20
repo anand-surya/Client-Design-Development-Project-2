@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+    
+        <title>IST Dept</title>
+        <!-- Jquery and Plugin Scripts -->
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/rajasrinivasan_style.css" />
+        <link rel="stylesheet" type="text/css" href="css/tablesorter.css" />
+        <!-- <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script> -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="https://unpkg.com/sticky-table-headers"></script>
+        <script src="js/rajasrinivasan_jquery_functions.js" type="text/javascript"></script>
+        <script src="jquery.stickyTableHeader.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar-fixed"> <!-- Collapsible Navbar (responsive) -->
+            <nav>
+                <div class="nav-wrapper orangeBg">
+                    <span>
+                        <a href="https://www.rit.edu" class="brand-logo right"><img src="img/rit-only-white/RIT.png" id="logo"></a>
+                    </span>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"  id="nBut">menu</i></a>
+                    <ul class="left hide-on-med-and-down">
+                        <li><a href="#" class="sAbout">About</a></li>
+                        <li><a href="#" class="sDegrees">Degrees</a></li>
+                        <li><a href="#" class="sMinors">Minors</a></li>
+                        <li><a href="#" class="sEmployment">Employment</a></li>
+                        <li><a href="#" class="sPeople">People</a></li>
+                        <li><a href="#" class="sResearch">Research</a></li>
+                        <li><a href="#" class="sResources">Resources</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="#" class="sAbout">About</a></li>
+                        <li><a href="#" class="sDegrees">Degrees</a></li>
+                        <li><a href="#" class="sMinors">Minors</a></li>
+                        <li><a href="#" class="sEmployment">Employment</a></li>
+                        <li><a href="#" class="sPeople">People</a></li>
+                        <li><a href="#" class="sResearch">Research</a></li>
+                        <li><a href="#" class="sResources">Resources</a></li>
+                    </ul>                
+                </div>
+            </nav>
+        </div>
+        <!-- Title Section -->
+            <section class="about1" id="about2" style="background-image: url(img/bg/tech.png);">
+                <div class="container">
+                    <div class="row"> 
+                        <div class="col s12">
+                            <h1 class="">Information Sciences <br/> And Technology</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- About Section -->
+            <section class="about" id="about1" >
+                <div class="container">
+                    <div class="row"> 
+                        <div id="about" class="col s12">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Undergraduate Degrees -->
+            <section class="undergrad-degrees" style=" background-image: url(img/bg/ug2.png); ">
+                <div class="container">
+                    <div class="col s12 clearfix">
+                        <h2>Undergraduate Degrees</h2>
+                    </div>
+                    <div class="row">
+                        <div id="undergrad-degrees">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Graduate Degrees -->
+            <section class="grad-degrees" style=" background-image: url(img/bg/it_banner.png); ">
+                <div class="container">
+                    <div class="col s12  clearfix">
+                        <h2>Graduate Degrees</h2>
+                    </div>
+                    <div class="row">
+                        <div id="grad-degrees">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Undergraduate Minors -->
+            <section class="undergrad-minors" style=" background-image: url(img/bg/minor.png); ">
+                <div class="container">
+                    <h2>Minors</h2>
+                    <div class="row">
+                        <div id="undergrad-minors">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Employment statistics-->
+            <section class="employment" style="background-image: url(img/bg/career.png);">
+                <div class="container">
+                    <div class="row">
+                        <div id="employment">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Employment, Co-op and map -->
+            <section class="students-work" style=" background-image: url(img/bg/map.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col s12">
+                                <h2>Where Our Students Work</h2>
+                                <p class="center-align">click below to view employment and co-op records</p>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#coopTable"  onclick="coopTable()">Co-op Table</a>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#employmentTable" onclick="employmentTable()">Employment Table</a>
+                            </div>
+                        </div>
+                        <!-- co-op table model -->
+                        <div class="modal" id="coopTable">
+                            <span class="right">
+                                <a href="#!" class="modal-action modal-close x-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                            </span>
+                            <div class="modal-content" id="coopTable-content">
+                            </div>
+                        </div>
+                        <!-- employment table model -->
+                        <div class="modal" id="employmentTable">
+                            <span class="right">
+                                <a href="#!" class="modal-action modal-close x-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                            </span>
+                            <div class="modal-content" id="employmentTable-content">
+                            </div>
+                        </div>
+                        <!-- map -->
+                            <div id="students-work">
+                            <div class="row">
+                                <div class="col s12">
+                                    <p class="center-align hide-on-small-only">Click a location to know more</p>
+                                    <iframe class="map" src="http://www.ist.rit.edu/api/map/"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- people section -->
+            <section class="people">
+                <div class="container">
+                    <div class="row">
+                        <div id="people">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- research section -->
+            <section class="research" style=" background-image: url(img/bg/resear.png);">
+                <div class="container">
+                    <h2>Research</h2>
+                    <div class="row">
+                        <div class="col s12">
+                            <!-- research areas -->
+                            <h3>Area of Interest</h3>
+                            <p class="center-align">click to know more</p>
+                        </div>
+                        <div id="research-area">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <!-- faculty research -->
+                            <h3>Research by Faculty</h3>
+                            <p class="center-align">click to know more</p>
+                        </div>
+                        <div id="research-faculty">
+                        </div>
+                    </div>
+                </div>
+            </section>                            
+        <!-- student resources section -->
+            <section class="resources">
+                <div class="container">
+                    <div class="row">
+                        <div id="resources">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- footer -->
+            <footer class="page-footer orangeBg">
+                <div class="container">
+                    <div class="row">
+                        <!-- social media div -->
+                        <div class="col l6 s12" id="footer-left">
+                        </div>
+                        <!-- quick links div -->
+                        <div class="col l4 offset-l2 s12" id="footer-right">
+                        </div>
+                    </div>
+                </div>
+                <!-- copyright div -->
+                <div class="footer-copyright" id="footer-bottom">
+
+                </div>
+            </footer>
+        </div> 
+
+
+        <!-- plugins -->
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/jquery.tablesorter.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script>
+
+            // initialiZe modal for co-op and employment table
+            $('.modal-trigger').leanModal();
+
+            // smooth scroll
+            $('.sAbout').on('click', function() {
+                $.smoothScroll({
+                    scrollElement: $('html, body'),
+                    scrollTarget: '.about'
+                });
+                return false;
+            });
+
+            $('.sDegrees').on('click', function() {
+                $.smoothScroll({
+                    scrollElement: $('html, body'),
+                    scrollTarget: '.undergrad-degrees'
+                });
+                return false;
+            });
+
+            $('.sMinors').on('click', function() {
+                $.smoothScroll({
+                    scrollElement: $('html, body'),
+                    scrollTarget: '.undergrad-minors'
+                });
+                return false;
+            });
+
+            $('.sEmployment').on('click', function() {
+                $.smoothScroll({
+                    scrollElement: $('html, body'),
+                    scrollTarget: '.employment'
+                });
+                return false;
+            });
+
+            $('.sPeople').on('click', function() {
+                $.smoothScroll({
+                    scrollElement: $('html, body'),
+                    scrollTarget: '.people'
+                });
+                return false;
+            });
+
+            $('.sResearch').on('click', function() {
+                $.smoothScroll({
+                    scrollElement: $('html, body'),
+                    scrollTarget: '.research'
+                });
+                return false;
+            });
+
+            $('.sResources').on('click', function() {
+                $.smoothScroll({
+                    scrollElement: $('html, body'),
+                    scrollTarget: '.resources'
+                });
+                return false;
+            });
+        </script>
+
+    </body>
+</html>
